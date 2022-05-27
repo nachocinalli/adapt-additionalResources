@@ -1,13 +1,22 @@
 {
   "name": "adapt-additionalResources",
-  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nachocinalli/adapt-additionalResources.git"
+  },
   "framework": ">=5.17.7",
+  "version": "1.0.0",
   "extension": "additionalResources",
   "displayName": "Additional Resources",
   "description": "The additional resources extension allows you to add resources to blocks or components.",
   "main": "/js/adapt-additionalResources.js",
-  "keywords": ["adapt-plugin", "adapt-extension"],
-  "authors": ["Nacho Cinalli <nachocinalli@gmail.com>"],
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "authors": [
+    "Nacho Cinalli <nachocinalli@gmail.com>"
+  ],
   "license": "GPL-3.0",
   "homepage": "https://github.com/nachocinalli/adapt-additionalResources",
   "issues": "https://github.com/nachocinalli/adapt-additionalResources/issues/",
