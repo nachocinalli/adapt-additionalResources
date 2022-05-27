@@ -1,0 +1,19 @@
+{
+  "_additionalResources": {
+    "_isEnabled": true,
+    "_showOnModelCompleted": false,
+    "_appendTo": "bottom",
+    "_classes": "is-hidden",
+    "text": "Additional Resources",
+    "_items": [
+      {
+        "title": "Adapt Project Site",
+        "_url": "https://www.adaptlearning.org/",
+        "_target": "_self",
+        "_forceDownload": false,
+        "filename": "",
+        "_classes": ""
+      }
+    ]
+  }
+}

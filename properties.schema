@@ -1,0 +1,299 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required": false,
+	"globals": {
+
+	},
+	"properties": {
+		"pluginLocations": {
+			"type": "object",
+			"required": true,
+			"properties": {
+				"block": {
+					"type": "object",
+					"properties": {
+						"_additionalResources": {
+							"type": "object",
+							"required": false,
+							"legend": "Additional Resources",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": false,
+									"title": "Enable additional resources",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Set to true to enable."
+								},
+								"_showOnModelCompleted": {
+									"type": "boolean",
+									"required": false,
+									"default": false,
+									"title": "Show on model completed",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Set to true to show on model completed."
+								},
+								"_appendTo": {
+									"type": "string",
+									"required": false,
+									"default": "bottom",
+									"title": "Append to:",
+									"enum": [
+										"bottom",
+										"top"
+									],
+									"inputType": {
+										"type": "Select",
+										"options": [
+											"bottom",
+											"top"
+										]
+									},
+									"validators": [],
+									"help": "Set to 'top' to append to the top of the component."
+
+								},
+								"text": {
+									"type": "string",
+									"required": false,
+									"title": "Text",
+									"inputType": "Text",
+									"validators": [],
+									"translatable": true
+								},
+
+								"_items": {
+									"type": "array",
+									"required": false,
+									"title": "Resources Items",
+									"items": {
+										"type": "object",
+										"required": false,
+										"title": "Items",
+										"properties": {
+											"title": {
+												"type": "string",
+												"required": true,
+												"title": "Title",
+												"inputType": "Text",
+												"validators": ["required"],
+												"translatable": true
+											},
+											"label": {
+												"type": "string",
+												"required": false,
+												"title": "Arial label",
+												"inputType": "Text",
+												"validators": [],
+												"translatable": true
+											},
+											"_url": {
+												"type": "string",
+												"required": true,
+												"title": "Link",
+												"inputType": "Asset",
+												"validators": ["required"]
+											},
+											"_target": {
+												"type": "string",
+												"required": false,
+												"enum": ["_blank", "_self", "_parent", "_top"],
+												"default": "_blank",
+												"title": "Target attribute",
+												"inputType": {
+													"type": "Select",
+													"options": ["_blank", "_self", "_parent", "_top"]
+												},
+												"validators": [],
+												"help": "This targets where to open the link. Acceptable values are '_blank' (opens the linked document in a new window or tab), '_parent' (opens the linked document in the parent frame), '_top' (opens the linked document in the full body of the window) or '_self' (opens the linked document in the same frame as it was selected. If no value is set, the default is '_blank'."
+											},
+											"_forceDownload": {
+												"type": "boolean",
+												"default": false,
+												"title": "Force download",
+												"inputType": "Checkbox",
+												"validators": [],
+												"help": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL."
+											},
+											"filename": {
+												"type": "string",
+												"required": false,
+												"title": "Filename",
+												"inputType": "Text",
+												"translatable": true,
+												"help": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to."
+											},
+											"_classes": {
+												"type": "string",
+												"required": false,
+												"default": "",
+												"title": "Classes",
+												"inputType": "Text",
+												"validators": [],
+												"help": "Additional classes"
+											}
+										}
+									}
+								},
+								"_classes": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Classes",
+									"inputType": "Text",
+									"validators": [],
+									"help": "Additional classes"
+								}
+
+							}
+						}
+					}
+				},
+				"component": {
+					"type": "object",
+					"properties": {
+						"_additionalResources": {
+							"type": "object",
+							"required": false,
+							"legend": "Additional Resources",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": false,
+									"title": "Enable additional resources",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Set to true to enable."
+								},
+								"_showOnModelCompleted": {
+									"type": "boolean",
+									"required": false,
+									"default": false,
+									"title": "Show on model completed",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Set to true to show on model completed."
+								},
+								"_appendTo": {
+									"type": "string",
+									"required": false,
+									"default": "bottom",
+									"title": "Append to:",
+									"enum": [
+										"bottom",
+										"top"
+									],
+									"inputType": {
+										"type": "Select",
+										"options": [
+											"bottom",
+											"top"
+										]
+									},
+									"validators": [],
+									"help": "Set to 'top' to append to the top of the component."
+
+								},
+								"text": {
+									"type": "string",
+									"required": false,
+									"title": "Text",
+									"inputType": "Text",
+									"validators": [],
+									"translatable": true
+								},
+
+								"_items": {
+									"type": "array",
+									"required": false,
+									"title": "Resources Items",
+									"items": {
+										"type": "object",
+										"required": false,
+										"title": "Items",
+										"properties": {
+											"title": {
+												"type": "string",
+												"required": true,
+												"title": "Title",
+												"inputType": "Text",
+												"validators": ["required"],
+												"translatable": true
+											},
+											"label": {
+												"type": "string",
+												"required": false,
+												"title": "Arial label",
+												"inputType": "Text",
+												"validators": [],
+												"translatable": true
+											},
+											"_url": {
+												"type": "string",
+												"required": true,
+												"title": "Link",
+												"inputType": "Asset",
+												"validators": ["required"]
+											},
+											"_target": {
+												"type": "string",
+												"required": false,
+												"enum": ["_blank", "_self", "_parent", "_top"],
+												"default": "_blank",
+												"title": "Target attribute",
+												"inputType": {
+													"type": "Select",
+													"options": ["_blank", "_self", "_parent", "_top"]
+												},
+												"validators": [],
+												"help": "This targets where to open the link. Acceptable values are '_blank' (opens the linked document in a new window or tab), '_parent' (opens the linked document in the parent frame), '_top' (opens the linked document in the full body of the window) or '_self' (opens the linked document in the same frame as it was selected. If no value is set, the default is '_blank'."
+											},
+											"_forceDownload": {
+												"type": "boolean",
+												"default": false,
+												"title": "Force download",
+												"inputType": "Checkbox",
+												"validators": [],
+												"help": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL."
+											},
+											"filename": {
+												"type": "string",
+												"required": false,
+												"title": "Filename",
+												"inputType": "Text",
+												"translatable": true,
+												"help": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to."
+											},
+											"_classes": {
+												"type": "string",
+												"required": false,
+												"default": "",
+												"title": "Classes",
+												"inputType": "Text",
+												"validators": [],
+												"help": "Additional classes"
+											}
+										}
+									}
+								},
+								"_classes": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Classes",
+									"inputType": "Text",
+									"validators": [],
+									"help": "Additional classes"
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
